@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3D Effect</title>
+<style>
+  .box {
+    width: 200px;
+    height: 200px;
+    background-color: #3498db;
+    position: relative;
+    margin: 100px auto;
+    perspective: 1000px;
+  }
+  .inner-box {
+    width: 100%;
+    height: 100%;
+    background-color: #e74c3c;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-style: preserve-3d; 
+    transition: transform 3s; 
+  }
+
+  .box:hover .inner-box {
+    transform: rotateY(45deg); 
+  }
+</style>
+</head>
+<body>
+
+<div class="box">
+  <div class="inner-box"></div>
+</div>
+
+</body>
+</html>

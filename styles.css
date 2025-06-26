@@ -1,0 +1,94 @@
+@charset "UTF-8";
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0px;
+    background-image: url(image/image.jpg);
+}
+h1 {
+    text-align: center;
+    text-shadow: 2px 2px 1px black;
+}
+.container {
+    perspective: 1000px; 
+  }
+  
+  .image {
+    width: 300px; 
+    height: 200px; 
+    transform-style: preserve-3d; 
+    float: right;
+  }
+  
+  .image img {
+    width: 100%;
+    height: 100%;
+    transform: rotateY(20deg); 
+    transition: transform 0.1s ease-in-out; 
+  }
+  
+  .image:hover img {
+    transform: rotateY(0);
+  }
+  
+
+header {
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    text-align: center;
+    background-color: #daebeb;
+    padding: 10px 0;
+    color: #080000;
+}
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000000;
+}
+nav a:hover{
+    color: #32a9d4;
+}
+section {
+    padding: 10px;
+}
+main {
+    padding: 120px;
+}
+p {
+    color: #fff;
+    text-shadow: 2px 2px 1px black;
+}
+h2 {
+    color: #ffffff;
+    text-shadow: 2px 2px 1px black;
+
+}
+
+.intro, .skills, .education {
+    margin-bottom: 10px;
+}
+a {
+    color: #ebe5e5;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+@media only screen and (max-width: 600px) {
+}
+@media screen and (max-width: 428px) {
+    body {
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 429px) and (max-width: 768px) {
+}
+
